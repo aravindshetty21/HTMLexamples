@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="utf-8">
+    <title>Table template</title>
+    <meta name="viewport" content="width=device-width,intial-scale=1.0">
+    <link href="tables.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="table.js"></script>
+</head>
+
+<body>
+    <h1>Student Marks</h1>
+    <p>Enter the names and marks of students to write into the table.</p>
+    <form action="" onsubmit="return false" >
+        <span>Student Name</span>
+        <input id="student" type="text" name="studentName">
+        <span>Maths</span>
+        <input id="maths" type="number" name="maths">
+        <span>Physics</span>
+        <input id="physics" type="number" name="physics">
+        <span>Chemistry</span>
+        <input id="chemistry" type="number" name="chemistry">
+        <input id="submit" type="submit" value="Add" onclick= sub() >
+        <input id="reset" type="reset">
+    </form>
+    <table>
+        <caption>table2</caption>
+        <thead id="studentMarks">
+            <tr>
+                <th>Student Names</th>
+                <th>Maths</th>
+                <th>Physics</th>
+                <th>Chemistry</th>
+            </tr>
+        </thead>
+        <tbody id="tbody1">
+
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
+
+
+</body>
+
+</html>
