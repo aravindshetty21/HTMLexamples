@@ -1,0 +1,95 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header {
+    height: 50px;
+    padding-bottom: 5px;
+    background-color: darkslateblue;
+}
+
+.nav-main {
+    display: flex;
+    background-color: aliceblue;
+    height: auto;
+    height: 100%;
+}
+
+.navigation {
+    width: 200px;
+    background-color: darkgray;
+}
+
+.navigation>ul {
+    line-height: 1.7;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navigation li {
+    list-style: none;
+    margin: 10px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.navigation li:hover {
+    background-color: rgb(75, 75, 75);
+}
+
+.navigation a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+.navigation a:visited {
+    color: black;
+}
+
+.navigation a:hover {
+    color: white;
+}
+
+.hamburger {
+    width: 200px;
+    height: 30px;
+    display: flex;
+}
+
+.open {
+    width: 30px;
+    margin: 6px 6px;
+}
+
+.open>div {
+    background-color: black;
+    height: 4px;
+    margin-bottom: 3px;
+}
+
+.open>div:last-child {
+    margin-bottom: 0px;
+}
+
+.close {
+    width: 30px;
+    margin: 6px;
+    justify-content: flex-end;
+    background-color: rgb(230, 76, 76);
+}
