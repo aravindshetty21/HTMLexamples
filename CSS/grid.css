@@ -1,0 +1,46 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+}
+
+.wrapper {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 50px repeat(8, 58px) 51px;
+    grid-gap: 10px;
+}
+
+header {
+    background: midnightblue;
+    grid-row: 1;
+    grid-column: 1/11;
+}
+
+nav {
+    background: white;
+    border-right: 1px solid black;
+    grid-row: 2/10;
+    grid-column: 1/3;
+}
+
+main {
+    background: white;
+    border-right: 1px solid black;
+    grid-row: 2/10;
+    grid-column: 3/9;
+}
+
+aside {
+    grid-row: 2/10;
+    grid-column: 9/11;
+}
+
+footer {
+    background: navy;
+    grid-row: 10;
+    grid-column: 1/11;
+}
